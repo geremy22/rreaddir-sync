@@ -13,14 +13,14 @@ function doFilter(filters,path,stat){
 }	
 
 function rreaddirSync(path, pfilters, plist) {
-  var list = [], filters = u.isArray(pfilters) ? pfilters : [pfilters],
+  var list = plist || [], filters = u.isArray(pfilters) ? pfilters : [pfilters],
 	files = fs.readdirSync(path);
 
 	files.forEach(function (file) {
 		var subPath = p.join(path, file),
 			stats = fs.lstatSync(subPath);
 		doFilter(filters,subPath,stats) && list.push(subPath);
-		stats.isDirectory() && recursiveReaddirSync(subPath, filters, list);
+		stats.isDirectory() && rreaddirSync(subPath, filters, list);
 	});
 
   return list;

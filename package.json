@@ -1,60 +1,19 @@
 {
-  "_args": [
-    [
-      {
-        "name": "rreaddir-sync",
-        "raw": "rreaddir-sync",
-        "rawSpec": "",
-        "scope": null,
-        "spec": "latest",
-        "type": "tag"
-      },
-      "D:\\German\\Programming\\Join"
-    ]
-  ],
-  "_from": "rreaddir-sync@latest",
-  "_id": "rreaddir-sync@1.0.0",
-  "_inCache": true,
-  "_installable": true,
-  "_location": "/rreaddir-sync",
-  "_nodeVersion": "6.2.1",
-  "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/rreaddir-sync-1.0.0.tgz_1465411517211_0.10373350721783936"
-  },
-  "_npmUser": {
-    "email": "germanmanuelvelazquez@gmail.com",
-    "name": "germagik"
-  },
-  "_npmVersion": "3.9.3",
-  "_phantomChildren": {},
-  "_requested": {
-    "name": "rreaddir-sync",
-    "raw": "rreaddir-sync",
-    "rawSpec": "",
-    "scope": null,
-    "spec": "latest",
-    "type": "tag"
-  },
-  "_requiredBy": [
-    "#USER"
-  ],
-  "_resolved": "https://registry.npmjs.org/rreaddir-sync/-/rreaddir-sync-1.0.0.tgz",
-  "_shasum": "5ecc8a10215f7763dd61394882fcae7d1bc296a5",
-  "_shrinkwrap": null,
-  "_spec": "rreaddir-sync",
-  "_where": "D:\\German\\Programming\\Join",
   "author": {
     "name": "German Velazquez"
+  },
+  "bugs": {
+    "url": "https://github.com/geremy22/rreaddir-sync/issues"
   },
   "dependencies": {},
   "description": "Utility to list directories recursively with filter options",
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "5ecc8a10215f7763dd61394882fcae7d1bc296a5",
-    "tarball": "https://registry.npmjs.org/rreaddir-sync/-/rreaddir-sync-1.0.0.tgz"
+    "shasum": "8989d0d2b564897d6ff94235708f6d1a835ed778",
+    "tarball": "https://registry.npmjs.org/rreaddir-sync/-/rreaddir-sync-1.0.1.tgz"
   },
+  "homepage": "https://github.com/geremy22/rreaddir-sync#readme",
   "keywords": [
     "readdir",
     "recursive",
@@ -73,12 +32,12 @@
   "name": "rreaddir-sync",
   "optionalDependencies": {},
   "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geremy22/rreaddir-sync.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/geremy22/rreaddir-sync"
-  },
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
