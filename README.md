@@ -4,11 +4,12 @@ Module for listing files and directories of a root directory, recursively and sy
 `npm install rreaddir-sync`
 
 ###Usage
-`rreadSync(path[,filters][,outList])`
+`rreadSync(path[,filters][,outList][,depth])`
 #####Arguments
 * `path` (String) The path from where you want to list files and directories
 * `filters` (Mixed) Function, RegExp or Array of Function/RegExp. Each function will take a path and fs.Stats object as arguments and must return a Boolean, true if you want to prevent adding current path in the outList. Each RegExp will be applied to each path.
 * `outList` (Array) Array to push each path, same as the response.
+* `depth` (Number) Number indicating how deep you want to list.
 
 #####Simple listing
 List all files and subdirectories from current dir.
@@ -24,7 +25,7 @@ console.log(rreadSync(".",rreadSync.ONLY_FILE)); //rreadSync.ONLY_FILE is a shor
 //list only directories
 console.log(rreadSync(".",rreadSync.ONLY_DIR)); //rreadSync.ONLY_DIR is a shortcut for (p,stat)=>stat.isDirectory();
 //list only js files
-console.log(rreadSync(".",[rreadSync.ONLY_FILE,/.*\.js$/]))
+console.log(rreadSync(".",rreadSync.ONLY_JS_FILE)); //rreadSync.ONLY_JS_FILE is a shortcut for [rreadSync.ONLY_FILE,/.*\.js$/]
 ```
 ######Note: Sorry if my english is not good
 
