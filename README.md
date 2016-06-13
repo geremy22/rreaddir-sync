@@ -25,7 +25,7 @@ console.log(rreadSync(".",rreadSync.ONLY_FILE)); //rreadSync.ONLY_FILE is a shor
 //list only directories
 console.log(rreadSync(".",rreadSync.ONLY_DIR)); //rreadSync.ONLY_DIR is a shortcut for (p,stat)=>stat.isDirectory();
 //list only js files
-console.log(rreadSync(".",[rreadSync.ONLY_FILE,/.*\.js$/]));
+console.log(rreadSync(".",rreadSync.ONLY_JS_FILE)); //rreadSync.ONLY_JS_FILE is a shortcut for [rreadSync.ONLY_FILE,/.*\.js$/]
 ```
 ######Note: Sorry if my english is not good
 
