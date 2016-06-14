@@ -7,7 +7,7 @@ Module for listing files and directories of a root directory, recursively and sy
 `rreadSync(path[,filters][,outList][,depth])`
 #####Arguments
 * `path` (String) The path from where you want to list files and directories
-* `filters` (Mixed) Function, RegExp or Array of Function/RegExp. Each function will take a path and fs.Stats object as arguments and must return a Boolean, true if you want to prevent adding current path in the outList. Each RegExp will be applied to each path.
+* `filters` (Mixed) Function, RegExp or Array of Function/RegExp. Each function will take a path and fs.Stats object as arguments and must return a Boolean, true if you want to add current path in the outList. Each RegExp will be applied to each path.
 * `outList` (Array) Array to push each path, same as the response.
 * `depth` (Number) Number indicating how deep you want to list.
 
